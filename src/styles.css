@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+background-color: rgba(0,0,0,0.7);
+}
+.bg-dark {
+    background: linear-gradient(45deg,black,red);
+}
+.bg-warning {
+    background: linear-gradient(45deg,rgb(61, 146, 80),red);
+}
+.bg-danger {
+    background: linear-gradient(45deg,rgb(94, 47, 47),rgb(71, 70, 13));
+}

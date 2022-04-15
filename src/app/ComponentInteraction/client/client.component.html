@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-danger text-center text-white">
+                   <div class="h5">Client Component</div> 
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <input type="text"
+                         placeholder="Enter Text"
+                         class="form-control"
+                         #clientRef
+                        />
+                    </div>
+                    <div>
+                        <button
+                         (click)="getClientData(clientRef.value,clientRef)"
+                        class="btn btn-danger px-4 mt-2 text-white">Send</button>
+                    </div>
+                </div>
+                <div class="card-footer bg-danger text-white">
+                    <p class="h4"><span class="">Server:&nbsp;{{serverData}}</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

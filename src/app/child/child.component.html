@@ -1,0 +1,20 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-white bg-warning">Child Component</div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <input 
+                        #child
+                       (change)="sendData(child.value)"
+                        type="text" class="form-control" placeholder="Enter Text"/>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    ParentData:{{getParentData}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

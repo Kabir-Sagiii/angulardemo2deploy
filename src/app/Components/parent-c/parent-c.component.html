@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white h4">Parent Component </div>
+                <div class="card-body">
+                    <div class="form-group">
+                    <input [(ngModel)]="parentData" class="form-control" type="text" placeholder="Enter Text" />
+                    </div>
+                    <app-child-c [parentData] ="parentData" (sendDataToParent)="getchildData($event)"></app-child-c>
+                </div>
+                <div class="card-footer h5 text-primary">
+                    ChildData:{{childData}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

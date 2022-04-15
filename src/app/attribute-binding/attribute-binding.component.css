@@ -1,0 +1,17 @@
+table{
+    
+    width: 500px;
+    margin-right: 500px;
+}
+div {
+    
+}
+.one {
+    color:red;
+    background-color: blueviolet;
+    padding: 10px;
+}
+.two {
+    font-weight: bold;
+    font-size: 15px;
+}
